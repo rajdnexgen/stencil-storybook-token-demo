@@ -6,8 +6,8 @@ export const config: Config = {
   taskQueue: 'async',
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: '@nyan-matt/stencil-storybook-token-demo',
-      proxiesFile: '../@nyan-matt\/stencil-storybook-token-demo-react/src/components.ts',
+      componentCorePackage: '@dstny-ds/stencil-storybook-token-demo',
+      proxiesFile: '../@dstny-ds\/stencil-storybook-token-demo-react/src/components.ts',
     }),
     {
       type: 'dist',
