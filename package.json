@@ -15,7 +15,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-storybook-token-demo/stencil-storybook-token-demo.js",
+  "unpkg": "dist/dstny-ds/dstny-ds.js",
   "files": [
     "dist/",
     "loader/"
@@ -34,8 +34,9 @@
   },
   "dependencies": {
     "@stencil/core": "~1.17.3",
+    "@types/lodash": "^4.14.74",
     "classnames": "~2.3.2",
-    "lit-element": "~2.4.0"
+    "lit-element": "~3.3.2"
   },
   "devDependencies": {
     "@babel/core": "~7.11.4",

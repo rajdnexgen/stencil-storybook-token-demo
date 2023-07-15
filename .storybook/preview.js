@@ -8,14 +8,14 @@ export const globalTypes = {
   theme: {
     name: 'Component Theme',
     description: 'Global theme for components',
-    defaultValue: 'brand-a-theme',
+    defaultValue: 'dstny-base-theme',
     toolbar: {
       
   
       // array of plain string values or MenuItem shape (see below)
       items: [
-        {value: 'brand-a-theme', title: 'Theme A'},
-        {value: 'brand-b-theme', title: 'Theme B'}
+        {value: 'dstny-base-theme', title: 'Dstny'},
+        {value: 'brand-b-theme', title: 'Non-Dstny'}
       ],
     },
   },

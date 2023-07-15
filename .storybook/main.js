@@ -4,7 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const WriteFilePlugin = require('write-file-webpack-plugin');
 
 const OUTPUT_DIR = '../dist';
-const PROJECT_NAME = 'stencil-storybook-token-demo';
+const PROJECT_NAME = 'dstny-ds';
 
 module.exports = {
   'stories': [

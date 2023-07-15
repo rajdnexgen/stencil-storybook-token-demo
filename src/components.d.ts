@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyButton {
+    interface DstnyButton {
         "disabled"?: boolean;
         "label": string;
         "size"?: 'small' | 'large';
@@ -14,18 +14,18 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLMyButtonElement extends Components.MyButton, HTMLStencilElement {
+    interface HTMLDstnyButtonElement extends Components.DstnyButton, HTMLStencilElement {
     }
-    var HTMLMyButtonElement: {
-        prototype: HTMLMyButtonElement;
-        new (): HTMLMyButtonElement;
+    var HTMLDstnyButtonElement: {
+        prototype: HTMLDstnyButtonElement;
+        new (): HTMLDstnyButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-button": HTMLMyButtonElement;
+        "dstny-button": HTMLDstnyButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyButton {
+    interface DstnyButton {
         "disabled"?: boolean;
         "label"?: string;
         "onButtonClicked"?: (event: CustomEvent<any>) => void;
@@ -33,14 +33,14 @@ declare namespace LocalJSX {
         "variant"?: 'primary' | 'secondary' | 'tertiary';
     }
     interface IntrinsicElements {
-        "my-button": MyButton;
+        "dstny-button": DstnyButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-button": LocalJSX.MyButton & JSXBase.HTMLAttributes<HTMLMyButtonElement>;
+            "dstny-button": LocalJSX.DstnyButton & JSXBase.HTMLAttributes<HTMLDstnyButtonElement>;
         }
     }
 }
