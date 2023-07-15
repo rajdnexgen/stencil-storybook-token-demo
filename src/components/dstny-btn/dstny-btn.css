@@ -1,0 +1,55 @@
+@import '../../css/dstny-ds/dstny-base.css';
+
+
+:host {
+  all: unset;
+  display: block;
+  margin: 16px;
+  
+}
+
+/* button base styles */
+
+.button {
+  padding-left: var(--spacing-button-5);
+  padding-right: var(--spacing-button-5);
+  font-family: var(--font-weight-regular);
+  border-radius: var(--border-radius-button);
+}
+
+/* button sizing styles */
+
+.button.button--size-small { 
+  font-size: var(--typography-button-2-font-size);
+  height: var(--spacing-8);
+  font-weight: var(--typography-button-2-font-weight);
+}
+
+.button.button--size-large { 
+  font-size: var(--typography-button-1-font-size);
+  line-height: var(--typography-button-1-font-size);
+  letter-spacing: var(--typography-button-1-letter-spacing);
+  height: var(--spacing-9);
+  font-weight: var(--typography-button-1-font-weight);
+}
+
+.button.button--size-extra-large { 
+  font-size: var(--typography-button-1-font-size);
+  line-height: var(--typography-button-1-font-size);
+  letter-spacing: var(--typography-button-1-letter-spacing);
+  height: var(--spacing-10);
+  font-weight: var(--typography-button-1-font-weight);
+}
+
+.button.button--variant-primary { 
+  background-color: var(--color-bgd-button-primary-default);
+  color: var(--color-text-button-primary-default);
+  box-shadow: var();
+}
+.button.button--variant-primary:hover { 
+  background-color: var(--color-bgd-button-primary-hover);
+}
+.button.button--disabled { 
+  background-color: var(--color-bgd-button-primary-disabled);
+  color: var(--color-text-button-primary-disabled);
+}
