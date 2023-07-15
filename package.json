@@ -34,7 +34,6 @@
   },
   "dependencies": {
     "@stencil/core": "~1.17.3",
-    "@types/lodash": "^4.14.74",
     "classnames": "~2.3.2",
     "lit-element": "~3.3.2"
   },
