@@ -5,12 +5,22 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Color } from "./interface";
 export namespace Components {
     interface DstnyButton {
+        "backgroundColor"?: 'primary' | 'light' | 'dark';
         "disabled"?: boolean;
         "label": string;
+        /**
+          * Function to focus the Dstny Button.
+         */
+        "setFocus": () => Promise<void>;
         "size"?: 'small' | 'large';
-        "variant"?: 'primary' | 'secondary' | 'tertiary';
+        /**
+          * The type of the button.
+         */
+        "type": 'submit' | 'reset' | 'button';
+        "variant"?: Color;
     }
 }
 declare global {
@@ -26,11 +36,24 @@ declare global {
 }
 declare namespace LocalJSX {
     interface DstnyButton {
+        "backgroundColor"?: 'primary' | 'light' | 'dark';
         "disabled"?: boolean;
         "label"?: string;
         "onButtonClicked"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the button loses focus.
+         */
+        "onDstnyBlur"?: (event: CustomEvent<void>) => void;
+        /**
+          * Emitted when the button has focus.
+         */
+        "onDstnyFocus"?: (event: CustomEvent<void>) => void;
         "size"?: 'small' | 'large';
-        "variant"?: 'primary' | 'secondary' | 'tertiary';
+        /**
+          * The type of the button.
+         */
+        "type"?: 'submit' | 'reset' | 'button';
+        "variant"?: Color;
     }
     interface IntrinsicElements {
         "dstny-button": DstnyButton;

@@ -16,6 +16,16 @@ export default {
         ],
       },
     },
+    type: {
+      control: {
+        type: 'inline-radio',
+        options: [
+          'submit',
+          'button',
+          'reset'
+        ],
+      },
+    },
     size: {
       control: {
         type: 'inline-radio',
@@ -33,8 +43,9 @@ export default {
   }
 };
 
-const Template = ({ label, variant, size, disabled }) => (
+const Template = ({ label, variant, size, type, disabled }) => (
   html`<dstny-button
+  type=${type} 
   size=${size} 
   variant=${variant} 
   disabled=${disabled} 
@@ -45,9 +56,10 @@ const Template = ({ label, variant, size, disabled }) => (
 
 export const MultiTheme = Template.bind({});
 MultiTheme.args = {
+  type:'button',
   size: 'large',
   variant: 'primary',
   disabled: false,
-  label: 'Multi theme button',
+  label: 'Button CTA',
 };
 

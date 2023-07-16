@@ -11,10 +11,16 @@
 /* button base styles */
 
 .button {
-  padding-left: var(--spacing-button-5);
-  padding-right: var(--spacing-button-5);
-  font-family: var(--font-weight-regular);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: var(--spacing-button-1) var(--spacing-button-4);
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-regular);
   border-radius: var(--border-radius-button);
+  border: none;
 }
 
 /* button sizing styles */
