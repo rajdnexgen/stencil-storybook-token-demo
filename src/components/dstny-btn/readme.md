@@ -37,3 +37,8 @@ Function to focus the Dstny Button.
 Type: `Promise<void>`
 
 
+
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

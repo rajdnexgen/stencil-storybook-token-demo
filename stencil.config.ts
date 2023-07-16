@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
+import { frameworkTargets } from './framework-targets';
 
 export const config: Config = {
   namespace: 'dstny-ds',
