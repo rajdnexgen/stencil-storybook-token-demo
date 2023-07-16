@@ -17,6 +17,10 @@ module.exports = {
     '@storybook/addon-notes/register',
     '@storybook/addon-knobs',
     '@storybook/addon-actions',
+    '@storybook/addon-docs',
+    '@storybook/addon-controls',
+    '@storybook/addon-viewport',
+    './sidebar-links-addon/register.js',
   ],
   async webpackFinal(config) {
     config.entry.push(path.join(__dirname, OUTPUT_DIR, `${PROJECT_NAME}.js`));

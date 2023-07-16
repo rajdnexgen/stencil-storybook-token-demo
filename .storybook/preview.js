@@ -37,7 +37,7 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        'Scale Design System',
+        'Dstny Design System',
         'About Scale',
         'FAQ',
         'New Release',
@@ -78,8 +78,8 @@ export const parameters = {
 
 export const globalTypes = {
   theme: {
-    name: 'Component Theme',
-    description: 'Global theme for components',
+    name: 'Choose Theme',
+    description: 'Dstny theme for components',
     defaultValue: 'dstny-base-theme',
     toolbar: {
       

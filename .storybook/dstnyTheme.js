@@ -1,6 +1,6 @@
 import { create } from "@storybook/theming/create";
 
-const PRIMARY = "hsl(329.20000000000005, 100%, 44.3%)";
+const PRIMARY = "#118199";
 const WHITE = "hsl(0, 0%, 100%)";
 const TEXT = "hsl(0, 0%, 9.8%)";
 const GREY = "hsl(0, 0%, 94.9%)";
@@ -40,5 +40,5 @@ export default create({
   brandTitle: "Dstny Design System",
   // TODO add URL
   // brandUrl: 'https://example.com',
-  brandImage: "assets/logo_h_menu.png",
+  brandImage: "./assets/logo.svg",
 });
