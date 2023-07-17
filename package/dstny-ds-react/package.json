@@ -8,7 +8,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "yarn clean && yarn rollup",
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p .",
     "clean": "rimraf dist",
     "format": "prettier --write \"package.json\"",
     "rollup": "rollup -c"
@@ -22,15 +24,19 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^11.1.1",
+    "@types/react": "^18.2.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
     "rollup": "2.79.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "@types/react-dom": "^16.9.6",
-    "@types/vfile-message": "^2.0.0"
+    "@types/vfile-message": "^2.0.0",
+    "stencil-library": "*"
   },
   "peerDependencies": {
     "react": ">=16.13.1",
@@ -43,5 +49,18 @@
       "node_modules",
       "dist"
     ]
+  },
+  "author": "Rupraj Pradhan <rupraj.pradhan@gmail.com>",
+  "homepage": "https://github.com/rajdnexgen/stencil-storybook-token-demo#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajdnexgen/stencil-storybook-token-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rajdnexgen/stencil-storybook-token-demo/issues"
   }
 }

@@ -1,0 +1,21 @@
+{
+    "packages": [
+      "package/*"
+    ],
+    "npmClient": "npm",
+    "npmClientArgs": [
+      "--pure-lockfile"
+    ],
+    "version": "^4.0.0",
+    "command": {
+      "version": {
+        "allowBranch": "main"
+      },
+      "publish": {
+        "conventionalCommits": true,
+        "message": "chore(release): publish",
+        "allowBranch": "release",
+        "access": "public"
+      }
+    }
+  }

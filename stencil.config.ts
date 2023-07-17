@@ -1,14 +1,19 @@
 import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
-import { frameworkTargets } from './framework-targets';
+import { angularOutputTarget } from '@stencil/angular-output-target';
 
 export const config: Config = {
   namespace: 'dstny-ds',
   taskQueue: 'async',
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: '@dstny-ds/dstny-ds',
-      proxiesFile: '/package/@dstny-ds\/dstny-ds-react/src/components.ts',
+      componentCorePackage: 'dstny-ds-react-library',
+      proxiesFile: 'package/dstny-ds-react-library\/lib/components/stencil-generated/index.ts',
+    }),
+    angularOutputTarget({
+      componentCorePackage: 'dstny-ds',
+      directivesProxyFile: 'angular-workspace/projects/dstny-ds/src/lib/stencil-generated/components.ts',
+      directivesArrayFile: 'angular-workspace/projects/dstny-ds/src/lib/stencil-generated/index.ts'
     }),
     {
       type: 'dist',
