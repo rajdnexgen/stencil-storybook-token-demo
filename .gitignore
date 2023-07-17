@@ -7,6 +7,7 @@ hydrate/
 *~
 *.log
 *.lock
+*-lock
 *.tmp
 *.tgz
 log.txt
