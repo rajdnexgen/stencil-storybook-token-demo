@@ -11,5 +11,6 @@
       "sourceMap": true,
       "lib": ["es6"]
     },
-    "exclude": ["node_modules", "**/*.spec.ts", "**/__tests__/**"]
+    "exclude": [
+     "**/*.spec.ts", "**/__tests__/**"]
   }

@@ -11,6 +11,10 @@
       "allowSyntheticDefaultImports": true,
       "declarationDir": "./dist/types"
     },
-    "include": ["lib"],
+    "include": [
+      "lib",
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
     "exclude": ["node_modules"]
   }

@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "publishConfig": {
-    "registry": "http://archive.telepo.com/repository/mitel-npm/"
+    "access": "public"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -21,10 +21,11 @@
   "unpkg": "dist/dstny-ds/dstny-ds.js",
   "files": [
     "dist/",
-    "loader/"
+    "loader/",
+    "hydrate/"
   ],
   "scripts": {
-    "build": "stencil build --docs",
+    "build": "stencil build --docs-readme",
     "build:watch": "stencil build --watch --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",

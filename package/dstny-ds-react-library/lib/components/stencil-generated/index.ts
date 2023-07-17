@@ -3,7 +3,7 @@
 /* auto-generated react proxies */
 import { createReactComponent } from './react-component-lib';
 
-import type { JSX } from 'dstny-ds-react-library';
+import type { JSX } from '@telepo/dstny-ds';
 
 
 
