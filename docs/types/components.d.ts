@@ -5,42 +5,65 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
+import { Color } from "./interface";
 export namespace Components {
-    interface MyButton {
+    interface DstnyButton {
+        "backgroundColor"?: 'primary' | 'light' | 'dark';
         "disabled"?: boolean;
         "label": string;
+        /**
+          * Function to focus the Dstny Button.
+         */
+        "setFocus": () => Promise<void>;
         "size"?: 'small' | 'large';
-        "variant"?: 'primary' | 'secondary' | 'tertiary';
+        /**
+          * The type of the button.
+         */
+        "type": 'submit' | 'reset' | 'button';
+        "variant"?: Color;
     }
 }
 declare global {
-    interface HTMLMyButtonElement extends Components.MyButton, HTMLStencilElement {
+    interface HTMLDstnyButtonElement extends Components.DstnyButton, HTMLStencilElement {
     }
-    var HTMLMyButtonElement: {
-        prototype: HTMLMyButtonElement;
-        new (): HTMLMyButtonElement;
+    var HTMLDstnyButtonElement: {
+        prototype: HTMLDstnyButtonElement;
+        new (): HTMLDstnyButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-button": HTMLMyButtonElement;
+        "dstny-button": HTMLDstnyButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyButton {
+    interface DstnyButton {
+        "backgroundColor"?: 'primary' | 'light' | 'dark';
         "disabled"?: boolean;
         "label"?: string;
         "onButtonClicked"?: (event: CustomEvent<any>) => void;
+        /**
+          * Emitted when the button loses focus.
+         */
+        "onDstnyBlur"?: (event: CustomEvent<void>) => void;
+        /**
+          * Emitted when the button has focus.
+         */
+        "onDstnyFocus"?: (event: CustomEvent<void>) => void;
         "size"?: 'small' | 'large';
-        "variant"?: 'primary' | 'secondary' | 'tertiary';
+        /**
+          * The type of the button.
+         */
+        "type"?: 'submit' | 'reset' | 'button';
+        "variant"?: Color;
     }
     interface IntrinsicElements {
-        "my-button": MyButton;
+        "dstny-button": DstnyButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-button": LocalJSX.MyButton & JSXBase.HTMLAttributes<HTMLMyButtonElement>;
+            "dstny-button": LocalJSX.DstnyButton & JSXBase.HTMLAttributes<HTMLDstnyButtonElement>;
         }
     }
 }

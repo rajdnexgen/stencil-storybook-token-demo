@@ -1,10 +1,10 @@
 {
   "entries": [
-    "./components/my-button/my-button.js"
+    "./components/dstny-btn/dstny-btn.js"
   ],
   "compiler": {
     "name": "@stencil/core",
-    "version": "1.17.3",
+    "version": "1.17.4",
     "typescriptVersion": "3.9.7"
   },
   "collections": [],

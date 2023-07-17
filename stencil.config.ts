@@ -27,8 +27,8 @@ export const config: Config = {
     }),
     angularOutputTarget({
       componentCorePackage: '@telepo/dstny-ds',
-      directivesProxyFile: 'angular-workspace/projects/dstny-ds/src/lib/stencil-generated/components.ts',
-      directivesArrayFile: 'angular-workspace/projects/dstny-ds/src/lib/stencil-generated/index.ts',
+      directivesProxyFile: 'package/dstny-ds-angular-library/projects/dstny-ds/src/lib/stencil-generated/components.ts',
+      directivesArrayFile: 'package/dstny-ds-angular-library/projects/dstny-ds/src/lib/stencil-generated/index.ts',
     }),
     vueOutputTarget({
       componentCorePackage: '@telepo/dstny-ds',

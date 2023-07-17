@@ -50,7 +50,6 @@
 .button.button--variant-primary { 
   background-color: var(--color-bgd-button-primary-default);
   color: var(--color-text-button-primary-default);
-  box-shadow: var();
 }
 .button.button--variant-primary:hover { 
   background-color: var(--color-bgd-button-primary-hover);
@@ -58,4 +57,11 @@
 .button.button--disabled { 
   background-color: var(--color-bgd-button-primary-disabled);
   color: var(--color-text-button-primary-disabled);
+}
+.button.button--variant-secondary { 
+  background-color: var(--color-bgd-button-secondary-default);
+  color: var(--color-text-button-secondary-default);
+}
+.button.button--variant-secondary:hover { 
+  background-color: var(--color-bgd-button-secondary-hover);
 }

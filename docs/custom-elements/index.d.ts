@@ -1,11 +1,11 @@
-/* StencilStorybookTokenDemo custom elements bundle */
+/* DstnyDs custom elements bundle */
 
-import { Components } from "../types/global";
+import { Components } from "../types/interface";
 
-interface MyButton extends Components.MyButton, HTMLElement {}
-export const MyButton: {
-  prototype: MyButton;
-  new (): MyButton;
+interface DstnyButton extends Components.DstnyButton, HTMLElement {}
+export const DstnyButton: {
+  prototype: DstnyButton;
+  new (): DstnyButton;
 };
 
 /**
