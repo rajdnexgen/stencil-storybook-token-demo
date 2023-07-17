@@ -1,6 +1,7 @@
 import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
 import { angularOutputTarget } from '@stencil/angular-output-target';
+import { vueOutputTarget } from '@stencil/vue-output-target';
 
 const excludeComponents = [
   'animatable-component',
@@ -14,6 +15,9 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
+      copy: [
+        {src: '../src/css/**/*', dest: 'css/', warn: true}
+      ],
     },
     reactOutputTarget({
       componentCorePackage: '@telepo/dstny-ds',
@@ -24,7 +28,11 @@ export const config: Config = {
     angularOutputTarget({
       componentCorePackage: '@telepo/dstny-ds',
       directivesProxyFile: 'angular-workspace/projects/dstny-ds/src/lib/stencil-generated/components.ts',
-      directivesArrayFile: 'angular-workspace/projects/dstny-ds/src/lib/stencil-generated/index.ts'
+      directivesArrayFile: 'angular-workspace/projects/dstny-ds/src/lib/stencil-generated/index.ts',
+    }),
+    vueOutputTarget({
+      componentCorePackage: '@telepo/dstny-ds',
+      proxiesFile: './package/dstny-ds-vue-library/lib/components.ts',
     }),
     {
       type: 'dist-custom-elements-bundle',

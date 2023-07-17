@@ -1,6 +1,6 @@
 {
   "name": "@telepo/dstny-ds",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "repository": "",
   "author": "Dstny",
@@ -9,7 +9,8 @@
     "packages/*"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "http://archive.telepo.com/repository/mitel-npm/"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -47,9 +48,9 @@
     "@babel/core": "~7.11.4",
     "@babel/plugin-syntax-jsx": "~7.10.4",
     "@babel/plugin-transform-react-jsx": "~7.10.4",
-    "@nowseemee/vue-output-target": "0.0.4",
     "@stencil/angular-output-target": "^0.0.7",
     "@stencil/react-output-target": "^0.3.1",
+    "@stencil/vue-output-target": "^0.8.6",
     "@storybook/addon-actions": "~6.0.21",
     "@storybook/addon-controls": "~6.0.21",
     "@storybook/addon-docs": "~6.0.21",

@@ -1,0 +1,38 @@
+{
+  "name": "dstny-ds-vue-library",
+  "version": "0.0.1",
+  "description": "Dstny Design System - VueJS",
+  "author": "Khader Vali <khader.kalava@telepo.com>",
+  "homepage": "https://github.com/rajdnexgen/stencil-storybook-token-demo#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://khadervali@github.com/rajdnexgen/stencil-storybook-token-demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "npm run tsc",
+    "tsc": "tsc -p ."
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/rajdnexgen/stencil-storybook-token-demo/issues"
+  },
+  "dependencies": {
+    "@telepo/dstny-ds": "*"
+  },
+  "devDependencies": {
+    "vue": "^3.3.4"
+  }
+}

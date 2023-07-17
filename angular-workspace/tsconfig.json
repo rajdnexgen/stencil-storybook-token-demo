@@ -2,12 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "baseUrl": "../",
+    "outDir": "./dist/dstny-ds-angular",
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "dstny-ds": [
-        "dist/dstny-ds"
+        "dist/dstny-ds-angular"
       ]
     },
     "strict": true,

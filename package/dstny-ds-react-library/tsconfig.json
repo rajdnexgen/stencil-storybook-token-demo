@@ -1,7 +1,7 @@
 {
     "extends": "../tsconfig.json",
     "compilerOptions": {
-      "outDir": "./dist",
+      "outDir": "../../dist/dstny-ds-react",
       "lib": ["dom", "es2015"],
       "module": "es2015",
       "moduleResolution": "node",
@@ -9,7 +9,7 @@
       "skipLibCheck": true,
       "jsx": "react",
       "allowSyntheticDefaultImports": true,
-      "declarationDir": "./dist/types"
+      "declarationDir": "../../dist/dstny-ds-react/types"
     },
     "include": [
       "lib",

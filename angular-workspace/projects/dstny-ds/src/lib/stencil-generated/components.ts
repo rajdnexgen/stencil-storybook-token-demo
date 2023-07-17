@@ -3,9 +3,9 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZone } from '@angular/core';
 import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
-import { Components } from 'dstny-ds';
+import { Components } from '@telepo/dstny-ds';
 
-import { DstnyButton as IDstnyButton } from 'dstny-ds/dist/types/components/dstny-btn/dstny-btn';
+import { DstnyButton as IDstnyButton } from '@telepo/dstny-ds/dist/types/components/dstny-btn/dstny-btn';
 export declare interface DstnyButton extends Components.DstnyButton {}
 @ProxyCmp({
   inputs: ['backgroundColor', 'disabled', 'label', 'size', 'type', 'variant'],
