@@ -2,7 +2,7 @@ import { html } from 'lit-html';
 import readme from './readme.md';
 
 export default {
-  title: 'Button',
+  title: 'Components/Button',
   argTypes: {
     label: { control: 'text' },
     disabled: { control: 'boolean' }, 
